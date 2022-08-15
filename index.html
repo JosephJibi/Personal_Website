@@ -9,6 +9,27 @@
     <title>Jibi Joseph</title>
     <link rel="icon" href="photo.png" type="image/gif" sizes="16x16">
     <style>
+        
+    @media only screen and (max-width: 768px) {
+
+            .image{
+                margin-top: 15px !important;
+                max-width: 40% !important;
+            }  
+            .about{
+                padding-top: 4cm !important;
+            }  
+       
+    }
+    @media only screen and (min-width: 768px) and (max-width:1023px){
+        .image{
+            margin-top: 20px !important;
+                max-width: 30% !important;
+            }  
+            .about{
+                padding-top: 4cm !important;
+            }  
+    }
         .navbar {
             position: relative;
             height: max-content;
@@ -21,17 +42,14 @@
             /* 50% of your logo width */
             display: block;
 
+
         }
 
         .image {
-            /* width: 117px; */
-            /* border-radius: 50%; */
 
-            /* height: 200px; */
-            margin-top: 20px;
-            
-            max-width: 23%;
-            
+            margin-top: 25px;
+            max-width: 20%;
+           
 
         }
     </style>
@@ -47,7 +65,7 @@
                     <a class="navbar-brand" href="#">
 
                         <img src="photo.jpeg" alt="Image"
-                            class="image img-fluid rounded-circle position-absolute top-100 start-50 translate-middle">
+                            class=" image img-fluid rounded-circle position-absolute top-100 start-50 translate-middle ">
 
                     </a>
                     <div style="position: fixed; width: 100%; z-index: 1;">
@@ -93,7 +111,8 @@
     </header>
 
     <!--About-->
-    <section id="about-section" style="background-color:#F0F0F0; padding-top: 5cm; padding-bottom: 2.3cm; text-align: center;">
+    <section id="about-section"
+        style="background-color:#F0F0F0; padding-top: 5cm; padding-bottom: 2.3cm; text-align: center;" class="about">
         <div class="container">
             <div class="col-md-12">
                 <p class="fw-bold fs-5 ">Jibi Joseph<br>Flutter Developer</p>
@@ -236,13 +255,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="fw-bold fs-1 text-decoration-underline" style="text-align: center; margin-bottom: 2cm;">More Info</p>
+                    <p class="fw-bold fs-1 text-decoration-underline" style="text-align: center; margin-bottom: 2cm;">
+                        More Info</p>
                     <div class="d-flex justify-content-between">
-                        <div><h5>JIBI Joseph</h5></div>
-                        <div><h5>Social Media</h5></div>
+                        <div>
+                            <h5>JIBI Joseph</h5>
+                        </div>
+                        <div>
+                            <h5>Social Media</h5>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <div><h5>josephjibi33@gmail.com</h5></div>
+                        <div>
+                            <h5>josephjibi33@gmail.com</h5>
+                        </div>
                         <div>
                             <a href="https://www.linkedin.com/in/jibi-joseph-13893821b/" style="color: inherit;">
                                 <i class="fab fa-linkedin"></i></a>
@@ -250,10 +276,12 @@
                                 <i class="fab fa-facebook-square"></i></a>
                             <a href="https://www.instagram.com/jibi_____joseph/" style="color: inherit;">
                                 <i class="fab fa-instagram"></i></a>
-                            
+
                         </div>
                     </div>
-                    <div style="text-align: center;"><p><i class="fas fa-copyright"></i>&nbsp;All rights reserved</p></div>
+                    <div style="text-align: center;">
+                        <p><i class="fas fa-copyright"></i>&nbsp;All rights reserved</p>
+                    </div>
                 </div>
 
             </div>
@@ -272,7 +300,7 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fc4e91cac6.js" crossorigin="anonymous"></script>
-    
+
 
 </body>
 
