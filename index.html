@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8">
@@ -9,27 +9,30 @@
     <title>Jibi Joseph</title>
     <link rel="icon" href="photo.png" type="image/gif" sizes="16x16">
     <style>
-        
-    @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
 
-            .image{
+            .image {
                 margin-top: 15px !important;
                 max-width: 40% !important;
-            }  
-            .about{
+            }
+
+            .about {
                 padding-top: 4cm !important;
-            }  
-       
-    }
-    @media only screen and (min-width: 768px) and (max-width:1023px){
-        .image{
-            margin-top: 20px !important;
+            }
+
+        }
+
+        @media only screen and (min-width: 768px) and (max-width:1023px) {
+            .image {
+                margin-top: 20px !important;
                 max-width: 30% !important;
-            }  
-            .about{
+            }
+
+            .about {
                 padding-top: 4cm !important;
-            }  
-    }
+            }
+        }
+
         .navbar {
             position: relative;
             height: max-content;
@@ -49,15 +52,33 @@
 
             margin-top: 25px;
             max-width: 20%;
-           
+
 
         }
+
+       ::-webkit-scrollbar{
+        width: 10px;
+        border-radius: 200px;
+       }
+       ::-webkit-scrollbar-thumb{
+        background: #218ffeb9;
+        opacity: 0.6;
+        border-radius: 200px;
+       }
+       ::-webkit-scrollbar-thumb:hover{
+        background: #0980f7b9;
+       }
+       ::-webkit-scrollbar-track{
+        background: #fafafd;
+        margin-block: .5em;
+       }
     </style>
 </head>
 
 <body>
+
     <!--head-navbar-->
-    <header style="background-color:#E8E8E8;" id="Home">
+    <header style="background-color:#E8E8E8;" id="home-section">
 
         <div class="col-md-12 ">
             <nav class="navbar  fixed-top py-5 ">
@@ -82,25 +103,26 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#service-section">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#work-section">Works</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contact-section">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#moreinfo-section">More Info</a>
-                                </li>
+                            
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#service-section">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#work-section">Works</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact-section">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#moreinfo-section">More Info</a>
+                                    </li>
 
-                            </ul>
-
+                                </ul>
+                            
                         </div>
                     </div>
                 </div>
@@ -259,10 +281,12 @@
                         More Info</p>
                     <div class="d-flex justify-content-between">
                         <div>
-                            <p class="fw-bold">JIBI Joseph<p>
+                            <p class="fw-bold">JIBI Joseph
+                            <p>
                         </div>
                         <div>
-                            <p class="fw-bold">Social Media<p>
+                            <p class="fw-bold">Social Media
+                            <p>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -303,7 +327,7 @@
 
 
 
-    
+
 </body>
 
 </html>
