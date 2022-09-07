@@ -325,6 +325,17 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fc4e91cac6.js" crossorigin="anonymous"></script>
 
+    <script>
+        const navLinks = document.querySelectorAll('.nav-item');
+        const menuToggle = document.querySelector('#offcanvasNavbar');
+        navLinks.forEach((elem) => {
+            elem.addEventListener('click', () => {
+                $("button.navbar-toggler").click();
+            });
+        });
+    </script>
+
+<script src="https://code.jquery.com/jquery-1.6.4.js"></script>
 
 
 
